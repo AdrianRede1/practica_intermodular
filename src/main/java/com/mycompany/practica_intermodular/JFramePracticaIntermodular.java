@@ -4,6 +4,11 @@
  */
 package com.mycompany.practica_intermodular;
 
+import java.awt.GridLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Usuario
@@ -15,6 +20,10 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
      */
     public JFramePracticaIntermodular() {
         initComponents();
+        
+        
+        //Sirve para que la ventana cuando se ejecute te salga en medio de la pantalla
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -26,21 +35,278 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel_sol_tipo = new javax.swing.JLabel();
+        jLabel_sol_radio = new javax.swing.JLabel();
+        jLabel_sol_temperatura = new javax.swing.JLabel();
+        jLabel_sol_distancia = new javax.swing.JLabel();
+        jLabel_sol_composición = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel10 = new javax.swing.JLabel();
+        JCombo_planeta = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        texto = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Estrella: SOL");
+
+        jLabel2.setText("Tipo de estrella:");
+
+        jLabel3.setText("Radio: ");
+
+        jLabel4.setText("Temperatura: ");
+
+        jLabel5.setText("Distancia: ");
+
+        jLabel6.setText("Composición: ");
+
+        jLabel_sol_tipo.setText("G2V");
+
+        jLabel_sol_radio.setText("696340");
+
+        jLabel_sol_temperatura.setText("5500");
+
+        jLabel_sol_distancia.setText("149.6");
+
+        jLabel_sol_composición.setText("74% Hidrógeno, 24% Helio, 2% Otros ");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel7.setText("PRÁCTICA INTERMODULAR-SISTEMA SOLAR");
+
+        jLabel8.setText("Autor: Adrián Redecillas");
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/practica_intermodular/pngtree-sun-yellow-cartoon-png-image_9096447.png"))); // NOI18N
+        jLabel10.setText("jLabel10");
+
+        JCombo_planeta.setEditable(true);
+        JCombo_planeta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un planeta", "Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno" }));
+        JCombo_planeta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JCombo_planetaActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Selecciona un planeta:");
+
+        javax.swing.GroupLayout textoLayout = new javax.swing.GroupLayout(texto);
+        texto.setLayout(textoLayout);
+        textoLayout.setHorizontalGroup(
+            textoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 273, Short.MAX_VALUE)
+        );
+        textoLayout.setVerticalGroup(
+            textoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 210, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 563, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(63, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel_sol_distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel_sol_temperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel2)
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel_sol_tipo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel_sol_radio, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(54, 54, 54)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel_sol_composición)))
+                        .addGap(23, 23, 23)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(JCombo_planeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addComponent(jLabel1)
+                                .addGap(32, 32, 32)
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel_sol_tipo))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel_sol_radio))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel_sol_temperatura))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel_sol_distancia))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel_sol_composición))
+                                .addGap(68, 68, 68))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(65, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(JCombo_planeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9))
+                        .addGap(48, 48, 48)
+                        .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JCombo_planetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCombo_planetaActionPerformed
+        // TODO add your handling code here:
+        String selectedPlanet = (String) JCombo_planeta.getSelectedItem();
+
+        JFrame planetInfoFrame = new JFrame("Información del Planeta");
+        planetInfoFrame.setSize(400, 300);
+        planetInfoFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+        JPanel panel = new JPanel(new GridLayout(7, 1));
+        switch (selectedPlanet) {
+            case "Mercurio":
+                texto.add(new JLabel("Planeta: Mercurio"));
+                texto.add(new JLabel("Radio (km): 2439,7"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 57,9"));
+                texto.add(new JLabel("Período Orbital (días): 88"));
+                texto.add(new JLabel("Temperatura Media (°C): 167"));
+                texto.add(new JLabel("Tipo de Planeta: Rocoso"));
+                texto.add(new JLabel("Número de Satélites: 0"));
+                break;
+            case "Venus":
+                texto.add(new JLabel("Planeta: Venus"));
+                texto.add(new JLabel("Radio (km): 6051,8"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 108,2"));
+                texto.add(new JLabel("Período Orbital (días): 225"));
+                texto.add(new JLabel("Temperatura Media (°C): 464"));
+                texto.add(new JLabel("Tipo de Planeta: Rocoso"));
+                texto.add(new JLabel("Número de Satélites: 0"));
+                break;
+            case "Tierra":
+                texto.add(new JLabel("Planeta: Tierra"));
+                texto.add(new JLabel("Radio (km): 6371"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 149,6"));
+                texto.add(new JLabel("Período Orbital (días): 365,25"));
+                texto.add(new JLabel("Temperatura Media (°C): 15"));
+                texto.add(new JLabel("Tipo de Planeta: Rocoso"));
+                texto.add(new JLabel("Número de Satélites: 1 (Luna)"));
+                break;
+            case "Marte":
+                texto.add(new JLabel("Planeta: Marte"));
+                texto.add(new JLabel("Radio (km): 3389,5"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 227,9"));
+                texto.add(new JLabel("Período Orbital (días): 687"));
+                texto.add(new JLabel("Temperatura Media (°C): -65"));
+                texto.add(new JLabel("Tipo de Planeta: Rocoso"));
+                texto.add(new JLabel("Número de Satélites: 2 (Fobos y Deimos)"));
+                break;
+            case "Júpiter":
+                texto.add(new JLabel("Planeta: Júpiter"));
+                texto.add(new JLabel("Radio (km): 69911"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 778,5"));
+                texto.add(new JLabel("Período Orbital (días): 4333"));
+                texto.add(new JLabel("Temperatura Media (°C): -110"));
+                texto.add(new JLabel("Tipo de Planeta: Gaseoso"));
+                texto.add(new JLabel("Número de Satélites: 79 (principales: Ío, Europa, Ganimedes, Calisto)"));
+                break;
+            case "Saturno":
+                texto.add(new JLabel("Planeta: Saturno"));
+                texto.add(new JLabel("Radio (km): 58232"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 1427"));
+                texto.add(new JLabel("Período Orbital (días): 10759"));
+                texto.add(new JLabel("Temperatura Media (°C): -140"));
+                texto.add(new JLabel("Tipo de Planeta: Gaseoso"));
+                texto.add(new JLabel("Número de Satélites: 83 (principales: Titán, Encélado)"));
+                break;
+            case "Urano":
+                texto.add(new JLabel("Planeta: Urano"));
+                texto.add(new JLabel("Radio (km): 25362"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 2871"));
+                texto.add(new JLabel("Período Orbital (días): 30687"));
+                texto.add(new JLabel("Temperatura Media (°C): -195"));
+                texto.add(new JLabel("Tipo de Planeta: Gaseoso"));
+                texto.add(new JLabel("Número de Satélites: 27 (principales: Titania, Oberón)"));
+                break;
+            case "Neptuno":
+                texto.add(new JLabel("Planeta: Neptuno"));
+                texto.add(new JLabel("Radio (km): 24622"));
+                texto.add(new JLabel("Distancia Media al Sol (millones de km): 4495"));
+                texto.add(new JLabel("Período Orbital (días): 60190"));
+                texto.add(new JLabel("Temperatura Media (°C): -200"));
+                texto.add(new JLabel("Tipo de Planeta: Gaseoso"));
+                texto.add(new JLabel("Número de Satélites: 14 (principal: Tritón)"));
+                break;
+            default:
+                texto.add(new JLabel("Selecciona un planeta"));
+                break;
+        }
+
+        planetInfoFrame.add(panel);
+        planetInfoFrame.setVisible(true);
+    }//GEN-LAST:event_JCombo_planetaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +344,24 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> JCombo_planeta;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel_sol_composición;
+    private javax.swing.JLabel jLabel_sol_distancia;
+    private javax.swing.JLabel jLabel_sol_radio;
+    private javax.swing.JLabel jLabel_sol_temperatura;
+    private javax.swing.JLabel jLabel_sol_tipo;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JPanel texto;
     // End of variables declaration//GEN-END:variables
 }
